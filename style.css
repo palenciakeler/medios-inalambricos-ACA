@@ -64,3 +64,12 @@ th {
     background-color: #1e293b;
     color: white;
 }
+
+/* Imágenes */
+img {
+  width: 100%;           /* ocupa el ancho disponible */
+  max-width: 700px;      /* pero no más de 700px */
+  border-radius: 10px;   /* esquinas redondeadas */
+  display: block;
+  margin: 20px 0;        /* espacio arriba y abajo */
+}
