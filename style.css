@@ -65,11 +65,32 @@ th {
     color: white;
 }
 
-/* Imágenes */
+
 img {
-  width: 100%;           /* ocupa el ancho disponible */
-  max-width: 700px;      /* pero no más de 700px */
-  border-radius: 10px;   /* esquinas redondeadas */
+  width: 100%;  
+  max-width: 700px;     
+  border-radius: 10px;   
   display: block;
-  margin: 20px 0;        /* espacio arriba y abajo */
+  margin: 20px 0;        
 }
+
+.card {
+  cursor: pointer;  
+}
+
+.card p {
+  display: none;  
+}
+
+.card.open p {
+  display: block;    
+}
+
+.card h3::after {
+  content: " +";    
+}
+
+.card.open h3::after {
+  content: " −";     
+}
+
